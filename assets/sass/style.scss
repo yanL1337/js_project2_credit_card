@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Helvetica;
+}
+
+img {
+  width: 4vw;
+}
+
+.cardWrapper {
+  margin: 0 auto;
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+
+  input {
+    margin-bottom: 2vh;
+    height: 5vh;
+  }
+
+  .cardOutput {
+    background: url("../img/bg.png") no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 35vw;
+    height: 25vh;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    top: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    .chipVisa {
+      display: flex;
+      justify-content: space-between;
+      padding: 1vh 1vw;
+    }
+    #raute {
+      padding-left: 1vw;
+      margin: 3vh 0 3vh 0;
+    }
+    .holderDate {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1vw;
+    }
+  }
+  .cardInput {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 60vw;
+    padding: 0 2vw;
+    padding-top: 15vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    .lower {
+      display: flex;
+      justify-content: space-between;
+      .exp,
+      .numCvv {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreditCard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="cardWrapper">
+      <div class="cardOutput">
+        <div class="chipVisa">
+          <img src="./assets/img/chip.png" alt="" />
+          <img src="./assets/img/visa.png" alt="" />
+        </div>
+        <p id="raute">#### #### #### ####</p>
+        <div class="holderDate">
+          <div class="infos">
+            <p>Card Holder</p>
+            <h2 id="fullName">Full Name</h2>
+          </div>
+          <div class="infos">
+            <p>Expires</p>
+            <h2 id="expireDate">MM/YY</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardInput">
+        <label for="cardNr">Card Number</label>
+        <input
+          type="text"
+          minlength="16"
+          maxlength="19"
+          onkeyup="cardChange()"
+          id="cardNr"
+        />
+        <label for="name">Card Holder</label>
+        <input type="text" oninput="nameChange()" id="name" />
+        <div class="lower">
+          <div class="exp">
+            <label for="expire">Expirition Date</label>
+            <input type="month" onchange="dateChange()" id="expire" />
+          </div>
+          <div class="numCvv">
+            <label for="cvv">CVV</label>
+            <input type="text" minlength="3" maxlength="3" id="cvv" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
